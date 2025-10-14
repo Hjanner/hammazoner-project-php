@@ -1,0 +1,10 @@
+entidad, es una clase que representa una fila de la tabla de usuario 
+
+<?php while($producto = $productos->fetch_object()) : ?>
+					<article>
+						<img src=" <?=base_url?>/uploads/images/<?=$producto->imagen?> " alt="">
+						<h3> <?= $producto->nombre ?> </h3>
+						<p class="precio"><?= $producto->precio ?> $</p>
+						<a href="" class="boton comprar">Comprar</a>
+					</article>
+				<?php endwhile; ?>
