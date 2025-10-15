@@ -1,6 +1,6 @@
 <main>
 	<div class="principal">
-		<h2>📋 Gestión de Pedidos</h2>
+		<h2>Gestión de Pedidos</h2>
 
 		<?php if(isset($_SESSION['pedido_estado']) && $_SESSION['pedido_estado'] == 'completed') : ?>
 			<div class="alert alert-success">
@@ -127,8 +127,7 @@ function cambiarEstado(pedidoId, nuevoEstado) {
 }
 
 .tabla-gestion thead {
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	color: white;
+	color: black;
 }
 
 .tabla-gestion th {

@@ -1,6 +1,6 @@
 <main>
 	<div class="principal">
-		<h2>📦 Mis Pedidos</h2>
+		<h2>Mis Pedidos</h2>
 
 		<?php if(isset($pedidos) && $pedidos->num_rows > 0) : ?>
 			<div class="pedidos-lista">
@@ -104,8 +104,7 @@
 }
 
 .pedido-header {
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	color: white;
+	color: black;
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -224,7 +223,6 @@
 }
 
 .btn-ver-detalle {
-	background-color: #667eea;
 	color: white;
 	padding: 10px 20px;
 	border-radius: 6px;

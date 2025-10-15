@@ -1,9 +1,7 @@
 <!--VISTA DEL METODO INDEX DEL CONTROLADOR--->
 
 <main>		
-	<div class="principal">
-		<h2>Titulo</h2>
-	</div>
+	<h2 style="text-align: center;">Categorias</h2>
 
 	<div>
 		<div class="tabla_block">
@@ -17,7 +15,8 @@
 			<?php endwhile; ?>
 		</div>
 	</div>
-		<a href="<?=base_url?>categoria/create" class="boton_a" style="display: block;">Crear Categoria</a>
+	
+	<a href="<?=base_url?>categoria/create" class="boton_a" style="display: block;">Crear Categoria</a>
 </main>
 
 <?php 

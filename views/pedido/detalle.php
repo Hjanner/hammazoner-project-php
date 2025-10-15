@@ -104,41 +104,6 @@
 					</div>
 				<?php endif; ?>
 
-				<!-- Línea de Tiempo del Pedido -->
-				<div class="timeline-container">
-					<h3>📊 Estado del Pedido</h3>
-					<div class="timeline">
-						<div class="timeline-item <?= ($pedido->estado == 'confirm' || $pedido->estado == 'preparation' || $pedido->estado == 'shipped' || $pedido->estado == 'delivered') ? 'completed' : '' ?>">
-							<div class="timeline-marker">✅</div>
-							<div class="timeline-content">
-								<h4>Confirmado</h4>
-								<p>Tu pedido ha sido confirmado</p>
-							</div>
-						</div>
-						<div class="timeline-item <?= ($pedido->estado == 'preparation' || $pedido->estado == 'shipped' || $pedido->estado == 'delivered') ? 'completed' : '' ?>">
-							<div class="timeline-marker">📦</div>
-							<div class="timeline-content">
-								<h4>En Preparación</h4>
-								<p>Estamos preparando tu pedido</p>
-							</div>
-						</div>
-						<div class="timeline-item <?= ($pedido->estado == 'shipped' || $pedido->estado == 'delivered') ? 'completed' : '' ?>">
-							<div class="timeline-marker">🚚</div>
-							<div class="timeline-content">
-								<h4>Enviado</h4>
-								<p>Tu pedido está en camino</p>
-							</div>
-						</div>
-						<div class="timeline-item <?= ($pedido->estado == 'delivered') ? 'completed' : '' ?>">
-							<div class="timeline-marker">✅</div>
-							<div class="timeline-content">
-								<h4>Entregado</h4>
-								<p>Pedido entregado exitosamente</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
 				<div class="detalle-acciones">
 					<a href="<?=base_url?>pedido/index" class="boton btn-secondary">← Volver a Mis Pedidos</a>
 					<a href="<?=base_url?>producto/index" class="boton btn-primary">🛍️ Seguir Comprando</a>
@@ -156,6 +121,7 @@
 
 <style>
 .detalle-container {
+	display: block;
 	max-width: 1100px;
 	margin: 20px auto;
 }
@@ -393,7 +359,6 @@
 }
 
 .timeline-item.completed .timeline-marker {
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 	box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 	transform: scale(1.1);
 }

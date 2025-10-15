@@ -47,15 +47,15 @@
 				
 
 
-				<div class="tabla_block_productos">
+				<div class="">
 					<h3 class="tabla_title">NOMBRE</h3>
 					<h3 class="tabla_title">PRECIO</h3>
 					<h3 class="tabla_title">STOCK</h3>
-					<h3 class="tabla_title">GESTIONAR</h3>
+					<h3 class="tabla_title">ACCIONES</h3>
 				</div>
 				<div class="tabla_block_productos">
 					<?php while($producto = $productos->fetch_object())  : ?>
-						<P class="tabla"><?= $producto->nombre; //accedemos a la propiedad id del objeto?></P>
+						<P class="tabla" style="text-align: start;"><?= $producto->nombre; //accedemos a la propiedad id del objeto?></P>
 						<P class="tabla"><?= $producto->precio; ?></P>
 						<P class="tabla"><?= $producto->stock; ?></P>
 						<div class="tabla_boton">
